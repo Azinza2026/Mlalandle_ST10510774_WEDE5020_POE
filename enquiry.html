@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manhattan Sweets - Enquiry</title>
+   <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<header>
+    <h1>Manhattan Sweets</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Us</a> |
+        <a href="products.html">Products</a> |
+        <a href="enquiry.html">Enquiry</a> |
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <hr>
+</header>
+
+<main>
+
+    <h2>Product Enquiry</h2>
+
+    <p>
+        Complete the form below to enquire about our products.
+    </p>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="product">Select Product:</label><br>
+
+        <select id="product" name="product">
+            <option value="">Select a product</option>
+            <option value="chocolates">Chocolates</option>
+            <option value="lollipops">Lollipops</option>
+            <option value="marshmallows">Marshmallows</option>
+        </select>
+
+        <br><br>
+
+        <label for="message">Your Enquiry:</label><br>
+
+        <textarea id="message"
+                  name="message"
+                  rows="6"
+                  cols="40"
+                  required></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit Enquiry">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</main>
+
+<footer>
+    <hr>
+    <p>&copy; 2026 Manhattan Sweets. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
