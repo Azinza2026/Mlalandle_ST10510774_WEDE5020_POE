@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhattan Sweets - Products</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -12,58 +13,48 @@
     <h1>Manhattan Sweets</h1>
 
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Us</a> |
-        <a href="products.html">Products</a> |
-        <a href="enquiry.html">Enquiry</a> |
-        <a href="contact.html">Contact Us</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
     </nav>
-
-    <hr>
 </header>
 
 <main>
-
     <h2>Our Products</h2>
+    <p>Explore our range of confectionery products.</p>
 
-    <p>
-        Explore our range of confectionery products.
-    </p>
+    <!-- Products grid container -->
+    <div class="products">
+        
+        <!-- Product 1: Chocolates -->
+        <div class="product-card">
+            <img src="images/Manhattan speckles.png" alt="Manhattan chocolate products" width="300">
+            <h3>Chocolates</h3>
+            <p>Delicious chocolate treats suitable for sharing and special occasions.</p>
+        </div>
 
-    <h3>Chocolates</h3>
+        <!-- Product 2: Lollipops -->
+        <div class="product-card">
+            <img src="images/Manhattan lollipops.png" alt="Manhattan lollipops" width="300">
+            <h3>Lollipops</h3>
+            <p>Colourful and enjoyable lollipops for customers of different ages.</p>
+        </div>
 
-    <img src="images\Manhattan speckles.png"
-         alt="Manhattan chocolate products"
-         width="300">
+        <!-- Product 3: Marshmallows -->
+        <div class="product-card">
+            <img src="images/Manhattan Marshmallows.png" alt="Manhattan marshmallows" width="300">
+            <h3>Marshmallows</h3>
+            <p>Soft and delicious marshmallow treats.</p>
+        </div>
 
-    <p>
-        Delicious chocolate treats suitable for sharing and special occasions.
-    </p>
-
-    <h3>Lollipops</h3>
-
-    <img src="images\Manhattan lollipops.png"
-         alt="Manhattan lollipops"
-         width="300">
-
-    <p>
-        Colourful and enjoyable lollipops for customers of different ages.
-    </p>
-
-    <h3>Marshmallows</h3>
-
-    <img src="images\Manhattan Marshmallows.png"
-         alt="Manhattan marshmallows"
-         width="300">
-
-    <p>
-        Soft and delicious marshmallow treats.
-    </p>
-
+    </div>
 </main>
 
 <footer>
-    <hr>
     <p>&copy; 2026 Manhattan Sweets. All rights reserved.</p>
 </footer>
 
