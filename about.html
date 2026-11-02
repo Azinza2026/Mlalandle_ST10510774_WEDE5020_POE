@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhattan Sweets - About Us</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -20,6 +22,11 @@
         <a href="contact.html">Contact Us</a>
     </nav>
 
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" id="pageSearch" placeholder="Search this page...">
+    </div>
+
     <hr>
 </header>
 
@@ -27,43 +34,50 @@
 
     <h2>About Manhattan Sweets</h2>
 
-    <p>
-        Manhattan Sweets is a South African confectionery brand offering
-        a variety of sweets and confectionery products.
-    </p>
+    <!-- CHANGED class="searchable" to class="searchable-item" -->
+    <section class="searchable-item">
+        <p>
+            Manhattan Sweets is a South African confectionery brand offering
+            a variety of sweets and confectionery products.
+        </p>
+    </section>
 
-    <h3>Our History</h3>
+    <section class="searchable-item">
+        <h3>Our History</h3>
+        <p>
+            Manhattan is a recognised confectionery brand in South Africa.
+            The brand provides a variety of sweet treats for customers.
+        </p>
+    </section>
 
-    <p>
-        Manhattan is a recognised confectionery brand in South Africa.
-        The brand provides a variety of sweet treats for customers.
-    </p>
+    <section class="searchable-item">
+        <h3>Our Mission</h3>
+        <p>
+            Our mission is to provide enjoyable and affordable confectionery
+            products while maintaining quality and customer satisfaction.
+        </p>
+    </section>
 
-    <h3>Our Mission</h3>
+    <section class="searchable-item">
+        <h3>Our Vision</h3>
+        <p>
+            Our vision is to remain a trusted and recognised confectionery
+            brand in South Africa.
+        </p>
+    </section>
 
-    <p>
-        Our mission is to provide enjoyable and affordable confectionery
-        products while maintaining quality and customer satisfaction.
-    </p>
-
-    <h3>Our Vision</h3>
-
-    <p>
-        Our vision is to remain a trusted and recognised confectionery
-        brand in South Africa.
-    </p>
-
-    <h3>Our Target Audience</h3>
-
-    <ul>
-        <li>Children</li>
-        <li>Teenagers</li>
-        <li>Parents</li>
-        <li>Families</li>
-        <li>Retailers</li>
-        <li>Wholesalers</li>
-        <li>Event organisers</li>
-    </ul>
+    <section class="searchable-item">
+        <h3>Our Target Audience</h3>
+        <ul>
+            <li>Children</li>
+            <li>Teenagers</li>
+            <li>Parents</li>
+            <li>Families</li>
+            <li>Retailers</li>
+            <li>Wholesalers</li>
+            <li>Event organisers</li>
+        </ul>
+    </section>
 
 </main>
 
@@ -72,5 +86,6 @@
     <p>&copy; 2026 Manhattan Sweets. All rights reserved.</p>
 </footer>
 
+<script src="script.js" defer></script>
 </body>
 </html>
