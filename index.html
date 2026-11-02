@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhattan Sweets - Home</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-</head>
-    </head>
+    <link href="style.css" rel="stylesheet" type="text/css"/></head>
 
 <body>
 
 <header>
     <h1>Manhattan Sweets</h1>
-    
-    <img src="images/Manhattan logo.png"alt="images/Manhattan logo.png"width="250">
+    <img src="images/Manhattan logo.png" alt="Manhattan logo" width="250">
 
     <nav>
         <a href="index.html">Home</a> |
@@ -23,7 +20,6 @@
         <a href="enquiry.html">Enquiry</a> |
         <a href="contact.html">Contact Us</a>
     </nav>
-
     <hr>
 </header>
 
@@ -65,10 +61,41 @@
 
 </main>
 
+<!-- ORDER POP-UP MODAL -->
+<div id="orderModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Place Your Order</h2>
+        
+        <form id="orderForm">
+            <label for="productSelect">Select Product:</label>
+            <select id="productSelect" required>
+                <option value="">-- Choose a product --</option>
+                <option value="Chocolates">Chocolates</option>
+                <option value="Lollipops">Lollipops</option>
+                <option value="Marshmallows">Marshmallows</option>
+                <option value="Sweets">Sweets</option>
+                <option value="Other confectionery products">Other confectionery products</option>
+            </select>
+
+            <label for="customerName">Your Name:</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="customerPhone">Phone Number:</label>
+            <input type="tel" id="customerPhone" placeholder="Enter 10-digit phone number" required>
+
+            <button type="submit" class="submit-order-btn">Confirm Order</button>
+        </form>
+
+        <!-- Success Message (Hidden by default) -->
+        <div id="orderSuccess" style="display:none; color: green; margin-top: 15px; font-weight: bold; text-align: center;">
+            ✓ Thank you! Your order has been placed successfully.
+        </div>
 <footer>
     <hr>
     <p>&copy; 2026 Manhattan Sweets. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

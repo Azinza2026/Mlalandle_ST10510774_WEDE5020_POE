@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manhattan Sweets - Contact Us</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -43,29 +44,41 @@
 
     <h3>Send Us a Message</h3>
 
-    <form action="#" method="post">
+    <!-- Form configured with id="myForm" to align with script.js -->
+    <form id="myForm" action="#" method="post">
 
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required>
+        <label for="customerName">Full Name:</label><br>
+        <input type="text" id="customerName" name="name">
+        <br>
+        <small id="nameError" style="color: red;"></small>
         <br><br>
 
-        <label for="email">Email Address:</label><br>
-        <input type="email" id="email" name="email" required>
+        <label for="customerEmail">Email Address:</label><br>
+        <input type="text" id="customerEmail" name="email">
+        <br>
+        <small id="emailError" style="color: red;"></small>
         <br><br>
 
-        <label for="message">Message:</label><br>
+        <label for="customerPhone">Phone Number:</label><br>
+        <input type="text" id="customerPhone" name="phone" placeholder="0821234567">
+        <br>
+        <small id="phoneError" style="color: red;"></small>
+        <br><br>
 
-        <textarea id="message"
+        <label for="messageInput">Message:</label><br>
+        <textarea id="messageInput"
                   name="message"
                   rows="6"
-                  cols="40"
-                  required></textarea>
-
+                  cols="40"></textarea>
         <br><br>
 
         <input type="submit" value="Send Message">
+        <input type="reset" value="Clear">
 
     </form>
+
+    <!-- Success message container matching script.js requirements -->
+    <p id="message" style="color: green; font-weight: bold; margin-top: 15px;"></p>
 
 </main>
 
